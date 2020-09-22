@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
+app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads'))); // carregar as imagens estaticas da pagina
 // ROTA: ENDEREÇO COMPLETO DA REQUISIÇÃO
 // RECURSO: QUAL ENTIDADE ESTAMOS ACESSANDO DO SISTEMA
 
